@@ -1,0 +1,174 @@
+/* dodaje pozadinu na sve stranice pocetna.html , onama.html i brendovi.html*/
+html { 
+	background: url("onama.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+
+@media screen and (max-width: 1200px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
+h1{
+	padding-top:30px;
+	color: white;
+	font-size: xx-large;
+	font-family: comic sans MS;
+	text-align: center;
+}
+h2{
+	padding-top:50px;
+	color: black;
+	font-size: xx-large;
+	font-family: comic sans MS;
+	text-align: center;
+}
+
+/*stvara se hover za trenutnu stranicu */ 
+li a:hover:not(.current) {
+    background-color: #111;
+}
+
+.topnav a{
+	border-right:1px solid #bbb;
+}
+
+.current {
+    background-color:rgb(172, 167, 167);
+}
+/* stlizira navigacijsku traku u stranicama pocetna.html, onama.html, brendovi.html */
+.topnav a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	font-family:Century Gothic;	
+}
+/* mijenja boju dugmeta kada pređemo mišem preko njega */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+	
+}
+/* doduje boju dugmetu koji označava na kojoj stranici se trenutno nalazimo */
+.topnav a.active {
+    background-color: rgb(77, 163, 80);
+    color: rgb(172, 167, 167);	
+}
+.h1{
+	text-align:center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  	-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+		height: 100%;
+		font-family: "helvetica neue", helvetica, arial, sans-serif;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	ul{
+		margin: 30px auto;
+		text-align: center;
+		padding:150px;
+	}
+
+	li{
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+	}
+	
+	/* stilizira dugmad koji prikazuju brendove na stranici brendovi.html*/
+	.round {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 30px;		
+		text-decoration: none;		
+		text-align: center;
+		font-size: 25px;		
+		text-shadow: 0 1px 0 rgba(255,255,255,.7);
+		letter-spacing: -.065em;
+		font-family: "Hammersmith One", sans-serif;		
+
+		border-width: 4px;
+		border-style: solid;
+		
+	}
+	
+
+	/*ističe se dugme preko kojeg prelazimo mišem  */
+	.round:hover {
+		width: 130%;
+		height: 130%;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 38px;
+
+	}
+	
+/*stillizira dugme adidas */
+	a.red {
+		background-color: rgba(239,57,50,1);
+		color: rgba(133,32,28,1);
+		border-color: rgba(133,32,28,.2);
+		
+	}
+/*stilizira dugme nike */
+	a.green {
+		background-color: rgba(1,151,171,1);
+		color: rgba(0,63,71,1);
+		border-color: rgba(0,63,71,.2);
+	}
+
+/*stilizira dugme reebok */
+	a.yellow {
+		background-color: rgb(225, 241, 0);
+		color: rgba(153,38,0,1);
+		border-color: rgba(153,38,0,.2);
+	}
+
+	.round span.round {
+		display: block;
+		opacity: 0;
+		font-size: 1px;
+		border: none;
+		padding: 40% 20% 0 20%;
+		color: #fff;
+	}
+/* stilizira dugme puma */
+	a.grey {
+		background-color: grey;
+		color: rgba(133,32,28,1);
+		border-color: rgba(133,32,28,.2);	
+	}
